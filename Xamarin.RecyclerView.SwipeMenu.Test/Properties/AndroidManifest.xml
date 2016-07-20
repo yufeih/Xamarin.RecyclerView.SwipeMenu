@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Xamarin.BaiduAds.Test" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <uses-sdk />
+  <application android:label="Xamarin.BaiduAds.Test" android:icon="@drawable/Icon">
+
+    <!-- 移动云AppX SDK -->
+    <activity android:name="com.baidu.appx.ui.BDInnerBrowser" />
+
+    <receiver android:name="com.baidu.appx.app_download.CompleteReceiver" >
+      <intent-filter>
+        <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+        <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.PACKAGE_ADDED" />
+
+        <data android:scheme="package" />
+        <!-- 注意！！ 这句必须要加，否则接收不到安装完成广播 -->
+      </intent-filter>
+    </receiver>
+
+  </application>
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>
