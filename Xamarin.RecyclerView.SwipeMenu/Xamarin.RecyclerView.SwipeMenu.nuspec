@@ -1,13 +1,16 @@
-﻿<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <metadata>
-        <id>Xamarin.RecyclerView.SwipeMenu</id>
-        <version>1.0.0</version>
-        <authors>Yufei Huang</authors>
-        <licenseUrl>https://github.com/yufeih/Xamarin.RecyclerView.SwipeMenu/blob/master/LICENSE</licenseUrl>
-        <projectUrl>https://github.com/yufeih/Xamarin.RecyclerView.SwipeMenu</projectUrl>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Xamarin binding for https://github.com/TUBB/SwipeMenu, used by http://talktosomeone.net </description>
-        <tags>Xamarin, Android, Binding, RecyclerView, Swipe Menu, Context Menu, Swipe</tags>
-    </metadata>
+  <metadata>
+    <id>Xamarin.RecyclerView.SwipeMenu</id>
+    <version>1.0.0</version>
+    <authors>Yufei Huang</authors>
+    <licenseUrl>https://github.com/yufeih/Xamarin.RecyclerView.SwipeMenu/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/yufeih/Xamarin.RecyclerView.SwipeMenu</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Xamarin binding for https://github.com/TUBB/SwipeMenu, used by http://talktosomeone.net</description>
+    <tags>Xamarin, Android, Binding, RecyclerView, Swipe Menu, Context</tags>
+    <dependencies>
+      <dependency id="Xamarin.Android.Support.v7.RecyclerView" version="23.4.0.1" />
+    </dependencies>
+  </metadata>
 </package>
